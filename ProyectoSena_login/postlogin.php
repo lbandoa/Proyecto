@@ -2,7 +2,7 @@
     session_start();
 
     if (isset($_SESSION['user_id'])) {
-        header('Location: /php-inicioSesion');
+        header('Location: /php-postlogin');
     }
 
 
@@ -24,14 +24,13 @@
 ?>
 
 
-
     <?php if(!empty($user)):?>
         <br> Bienvenido. <?= $user['email']?> 
         <br> Eres un pendej, te logueaste
         <a href="cerrarSesion.php">Porque ya no estoy aqui, mori, me fui</a>
     <?php else: ?>
-        <h1>Valiste monda, traga chele</h1>
-        <a href="postlogin.php">logg</a>
+        <h1></h1>
+        <a href="postlogin.html">Autenticacion exitosa!!! dar click</a>
         <!--<a href="registro.php">deslogg</a>-->
     <?php endif; ?> 
    

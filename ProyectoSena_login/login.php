@@ -17,7 +17,7 @@
 
         if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
         $_SESSION['user_id'] = $results['id'];
-        header("Location: /php-postlogin");
+        header("Location: /php-login");
         } else {
             $message = 'Lo sentimos, el usuario o contraseña no son correctos';
         }
